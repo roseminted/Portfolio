@@ -11,6 +11,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
         crossorigin="anonymous"></script>
@@ -50,6 +51,9 @@
                         <li>
                             <a href="/uscampingandhiking">US Camping &amp; Hiking</a>
                         </li>
+                        <li>
+                            <a href="/portfolio">Portfolio</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -59,46 +63,52 @@
         </nav>
 
         <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand navbarBrand" href="/">_yk_</a>
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Menu</span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-                </div>
-            </nav>
-            <!-- Banner -->
-            <section id="banner">
-                <div class="text-center vh-100">
-                    <h1>Hi My Name is Yasmin Khaleel</h1>
-                    <h3>I build things on the internet</h3>
-                </div>
-            </section>
-            <section>
+            <div class="header">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand navbarBrand" href="/">_yk_</a>
+                        <button type="button" id="sidebarCollapse" class="btn">
+                            <i class="fas fa-align-left"></i>
+                            <span>Menu</span>
+                        </button>
+                    </div>
+                </nav>
+                <!-- Banner -->
+                <section id="banner" class="section-one">
+                    <div class="text-center banner-section-one">
+                        <h1 class="banner-text">
+                            <span class="text-wrapper">
+                                <span class="letters">
+                                    Hi My Name is Yasmin
+                                </span>
+                            </span>
+                        </h1>
+                        <h3 class="description">
+                            I build things on the internet
+                        </h3>
+                        <div class="learn-more">
+                            <a href="#about">
+                                Learn More
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="section-two">
                 <a id="about" href=""></a>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac scelerisque lectus, at molestie
-                    magna. Curabitur efficitur, eros in tempor scelerisque, leo nunc blandit mauris, eget lobortis odio
-                    risus sed nunc. Aenean commodo, erat sit amet pellentesque dapibus, mi enim condimentum lacus, at
-                    interdum est justo scelerisque velit. Nulla lectus erat, convallis ut elit sed, semper sodales nisi.
-                    Proin facilisis risus lorem. Pellentesque porta iaculis nunc, et egestas risus feugiat eget. Cras
-                    odio nibh, viverra sed elit sed, semper sagittis mi. Donec semper nisi a massa facilisis hendrerit.
-                    Morbi pellentesque risus mauris, ut cursus ante varius eget.
-
-                    Pellentesque lobortis vel magna eu congue. Proin tellus tortor, vulputate et placerat ut, mollis nec
-                    odio. Fusce quis ipsum maximus, eleifend nulla efficitur, cursus nisi. Nam in purus vitae ex
-                    venenatis lobortis in sed nibh. Suspendisse potenti. Aliquam quis auctor mauris. Etiam eget dapibus
-                    augue, in dictum orci. Nulla facilisi. Sed porttitor, elit ac viverra vestibulum, est dolor bibendum
-                    orci, vel blandit lacus metus ac ex. Curabitur dignissim vulputate nisl eu laoreet. Vivamus a est id
-                    erat accumsan sollicitudin id ut nibh. Quisque et dui metus. Phasellus augue ligula, blandit ut odio
-                    a, suscipit rutrum mauris.
-                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="frame">
+                            <div class="image">
+                                <img src="/images/IMG_1194.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p>I am currently living in Newark, NJ</p>
+                    </div>
+                </div>
             </section>
             <section class="projects">
                 <p>
@@ -131,18 +141,42 @@
                 </p>
             </section>
             <footer>
-                <span>Yasmin Khaleel</span>
+                <ul class="icons list-unstyled">
+                    <li>
+                        <a href="https://github.com/roseminted" class="icon github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yasmin-khaleel-44b7a940" class="icon linkedin-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/yasmin.khaleel" class="icon facebook-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:ynkhaleel@gmail.com" class="icon email-icon">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </li>
+
+                </ul>
+                <span class="copyright">
+                    <a href="/">&copy; Yasmin Khaleel</a>
+                </span>
+                <div class="backToTopButton">
+                    <a href="#" id="backToTop" aria-label="Scroll to top">&#10148</a>
+                </div>
             </footer>
         </div>
-
         <div class="overlay"></div>
-
-
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
@@ -152,6 +186,8 @@
     <!-- jQuery Custom Scroller CDN -->
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- text animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="/javascripts/index.js"></script>
 </body>
 
