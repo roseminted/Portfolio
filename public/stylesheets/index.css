@@ -335,15 +335,16 @@ div.portfolioimage {
 }
 
 .aboutText {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 600;
     line-height: 1.7em;
     margin: auto;
+    padding-left: 5%
 }
 
 @media only screen and (max-width: 992px) {
     .aboutText {
-      margin: 5%;
+      margin: 6%;
     }
   }
 
@@ -408,6 +409,7 @@ div.portfolioimage {
     font-weight: 600;
     line-height: 1.7em;
     margin: auto;
+    color: #076585;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
@@ -437,18 +439,60 @@ div.portfolioimage {
 /* ---------------------------------------------------
     SKILLS SECTION
 ----------------------------------------------------- */
-.skills {
+.skills-tools {
+    margin: 5%;
+    background: #B88C9E;
+}
+
+.list-group {
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    grid-auto-flow: column;
+}
+
+@media only screen and (max-width: 1200px) {
+    .list-group {
+        display: grid;
+        grid-template-rows: repeat(6, min-content);
+        grid-auto-flow: column;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+.list-group {
+    display: grid;
+    grid-template-rows: repeat(11, min-content);
+    grid-auto-flow: column;
+}
+}
+
+.list-group-item {
     background-color: #B88C9E;
-}
-
-.skills .fab {
-    font-size: 4.5em;
-    color: #076585;
-    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+    border: none;
     padding: 3%;
-    display: inline-block;
 }
 
+.skills-tools h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 1.7em;
+    margin: auto;
+    color: #076585;
+    text-shadow: 0 0.1rem 0.05rem rgba(0, 0, 0, 0.5);
+}
+
+.skills-tools li {
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.7em;
+    margin: auto;
+    color: #564256;
+    text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+hr {
+	width: 80%;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
 
 /* ---------------------------------------------------
     CONTACT SECTION
@@ -459,17 +503,17 @@ div.portfolioimage {
     font-weight: 600;
     line-height: 1.7em;
     margin: auto;
-    padding-top: 5.5%;
     color: #076585;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
+
 
 .contact p {
     font-size: 1.8em;
     font-weight: 600;
     line-height: 1.7em;
     margin: auto;
-    padding-bottom: 6.5%;
+    padding-bottom: 10%;
 }
 
 .contact-email {
