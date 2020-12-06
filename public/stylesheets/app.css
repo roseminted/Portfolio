@@ -61,7 +61,6 @@ a, a:hover, a:focus {
     color: #f1f1f1;
     transition: all 0.5s;
     overflow-y: scroll;
-    /* box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); */
 }
 
 #sidebar.active {
@@ -254,3 +253,243 @@ ul.icons li:last-child {
 #backToTop:hover {  
     color: #564256;
 }
+
+/* ---------------------------------------------------
+    PROJECT PAGES
+----------------------------------------------------- */
+
+.project {
+    margin: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+
+@media only screen and (max-width: 1070px) {
+    .project {
+        font-size: .9em;
+    }
+}
+
+.project h1 {
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1.7em;
+    color: #564256;
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 1070px) {
+    .project h1 {
+        font-size: 2.6em;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .project h1 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .project h1 {
+        font-size: 1.8em;
+    }
+}
+
+.project h6 {
+    font-size: 1.2em;
+    line-height: 1.7em;
+    font-weight: 600;
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 1070px) {
+    .project h6 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project h6 {
+        font-size: 1.2em;
+    }
+}
+
+.project-links {
+    font-size: 1.5em;
+    line-height: 1.7em;
+    display: inline-block;
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 900px) {
+    .project-links {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project-links {
+        font-size: 1.5em;
+    }
+}
+
+.project-links:hover {
+    color: #B88C9E;
+    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+}
+
+.main {
+    padding-right: 4%;
+}
+
+.description-features {
+    padding-left: 4%;
+}
+
+.image-main {
+    box-shadow: 0 0 10px 5px;
+    max-width: 100%;
+}
+
+.live-demo {
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.load-delay {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.gifs {
+    width: 15rem;
+    margin: 2%;
+    box-shadow: 0 0 5px 5px;
+    /* border-radius: 5px;
+    cursor: pointer; */
+    transition: 0.3s;
+}
+
+.gifs:hover {opacity: 0.6;}
+
+.techsused {
+    display: grid;
+    grid-template-rows: repeat(6, min-content);
+    grid-auto-flow: column;
+    list-style-type: circle;
+}
+
+.portfolio .techsused {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-auto-flow: column;
+    list-style-type: circle;
+}
+
+.portfolio .techsused_container {
+    margin-top: 4%;
+}
+
+@media only screen and (max-width: 767px) {
+    .techsused {
+        margin-bottom: 6%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .description {
+        margin-bottom: 6%;
+    }
+}
+
+.notable-features {
+    list-style-type: circle;
+}
+
+.project li::marker {
+    color: #287f97;
+}
+
+.features {
+    margin-bottom: 6%;
+}
+
+
+/* gif modal */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #B88C9E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+

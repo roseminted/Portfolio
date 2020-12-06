@@ -322,7 +322,7 @@ ul.icons li:last-child {
     .frame {
       display: none;
     }
-  }
+}
 
 .portfolioimage img { 
     max-width: 48%;
@@ -419,18 +419,6 @@ div.portfolioimage {
     margin: auto;
 }
 
-.project-link {
-    font-size: 1.3em;
-    line-height: 1.7em;
-    margin: auto;
-    padding: 6%;
-}
-
-.project-link:hover {
-    color: #B88C9E;
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
-}
-
 .card:hover {
     box-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
 }
@@ -456,14 +444,14 @@ div.portfolioimage {
         grid-template-rows: repeat(6, min-content);
         grid-auto-flow: column;
     }
-  }
+}
 
 @media only screen and (max-width: 768px) {
-.list-group {
-    display: grid;
-    grid-template-rows: repeat(11, min-content);
-    grid-auto-flow: column;
-}
+    .list-group {
+        display: grid;
+        grid-template-rows: repeat(11, min-content);
+        grid-auto-flow: column;
+    }
 }
 
 .list-group-item {

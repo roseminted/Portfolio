@@ -1,12 +1,91 @@
 <% layout('layouts/boilerplate') %>
+
 <div class="project">
-    <h1>Amazon Theraputics</h1>
+    <h1 class="mb-3">Amazon Theraputics</h1>
     <div class="row">
-        <div class="col-6">
-            <img src="/images/deleteFromDatabase.gif" alt="">
+        <div class="col-md-6 main">
+            <section>
+                <img class="image-main" src="/images/amazontheraputics.png" alt="">
+                <div class="links-container py-2">
+                    <div class="project-links">
+                        <a class="live-demo" href="https://morning-chamber-61901.herokuapp.com/" target="_blank">
+                            Live Demo
+                        </a>
+                    </div>
+                    <div class=" project-links">
+                        <a class="source-code" href="https://github.com/roseminted/AmazonTheraputicsBlog"
+                            target="_blank">Source Code
+                        </a>
+                    </div>
+                </div>
+                <div class="load-delay">
+                    <p>
+                        This app is hosted on a Heroku Free Dyno Plan, meaning that on the initial load, the server may
+                        take 15-20 seconds or so to start up. Thank you.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h6>Technologies Used</h6>
+                <ul class="techsused">
+                    <li>MongoDB</li>
+                    <li>ExpressJS</li>
+                    <li>NodeJS</li>
+                    <li>Bootstrap 4</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Flash</li>
+                    <li>Passport</li>
+                    <li>Cloudinary</li>
+                    <li>Helmet</li>
+                    <li>JOI</li>
+                </ul>
+            </section>
         </div>
-        <div class="col-6">
-            <p>Brief description</p>
+        <div class="col-md-6 description-features">
+            <section class="features">
+                <h6>Notable Features</h6>
+                <ul class="notable-features">
+                    <li>Registration</li>
+                    <li>Login</li>
+                    <li>Image Upload</li>
+                    <li>Client &amp; Server Form Validations</li>
+                    <li>Create, Update, &amp; Delete Blog Posts</li>
+                    <li>Flash Messages</li>
+                    <li>Responsive Design</li>
+                    <li>Cloudnary API Integration</li>
+                </ul>
+            </section>
+            <section class="description">
+                <h6>Description</h6>
+                <p>A collaborative blogging application, where users can view and discuss experiences with medicines
+                    from the amazon rainforest.
+                </p>
+                <p>
+                    By registering and logging, the user will be allowed to contribute to the discussion by creating and
+                    updating
+                    posts.
+                </p>
+            </section>
         </div>
+    </div>
+    <div class="row text-center">
+        <section class="gifs-container">
+            <img class="gifs" src="/images/deleteFromDatabase.gif" alt="Delete From Database">
+            <img class="gifs" src="/images/authorization_formValidation.gif" alt="Authorization &amp; Form Validation">
+            <img class="gifs" src="/images/createNewPost_imageUpload.gif" alt="Create New Post &amp; Image Upload">
+            <img class="gifs" src="/images/editPost.gif" alt="Edit Post">
+            <img class="gifs" src="/images/flashMessages.gif" alt="Flash Messages &amp; Error Handling">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </section>
     </div>
 </div>
