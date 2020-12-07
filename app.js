@@ -19,8 +19,8 @@ app.get('/resume', (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact')
 });
-app.get('/amazontheraputics', (req, res) => {
-    res.render('projects/amazontheraputics')
+app.get('/amazontherapeutics', (req, res) => {
+    res.render('projects/amazontherapeutics')
 });
 app.get('/uscampingandhiking', (req, res) => {
     res.render('projects/uscampingandhiking')
