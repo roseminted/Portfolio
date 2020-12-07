@@ -346,7 +346,7 @@ div.portfolioimage {
     .aboutText {
       margin: 6%;
     }
-  }
+}
 
 /* colorful text */
 
@@ -421,6 +421,12 @@ div.portfolioimage {
 
 .card:hover {
     box-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+}
+
+@media only screen and (max-width: 992px) {
+    .col-lg-4 {
+      margin-bottom: 5%;
+    }
 }
 
 
