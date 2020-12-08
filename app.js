@@ -16,9 +16,6 @@ app.get('/', (req, res) => {
 app.get('/resume', (req, res) => {
     res.render('resume')
 });
-app.get('/contact', (req, res) => {
-    res.render('contact')
-});
 app.get('/amazontherapeutics', (req, res) => {
     res.render('projects/amazontherapeutics')
 });
@@ -28,8 +25,6 @@ app.get('/uscampingandhiking', (req, res) => {
 app.get('/portfolio', (req, res) => {
     res.render('projects/portfolio')
 });
-
-
 
 app.listen(3000, () => {
     console.log('Serving on port 3000')

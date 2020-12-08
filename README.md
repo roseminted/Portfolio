@@ -1,5 +1,5 @@
 ## Portfolio
-Fully responsize styling,
+Fully responsize styling
 Uses Flexbox
 
 # Tools:
