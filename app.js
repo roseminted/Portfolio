@@ -26,6 +26,7 @@ app.get('/portfolio', (req, res) => {
     res.render('projects/portfolio')
 });
 
-app.listen(3000, () => {
-    console.log('Serving on port 3000')
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Service on port ${port}`);
 });
