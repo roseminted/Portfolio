@@ -293,6 +293,14 @@ ul.icons li:last-child {
     color: #564256;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
+
+
+@media only screen and (max-width: 864px) {
+    #banner .learn-more {
+        margin: 20%;
+    }
+}
+
 #banner .learn-more:hover {
     color: #B88C9E;
     text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
