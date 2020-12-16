@@ -23,6 +23,12 @@ body .header {
     text-align: center;
 }
 
+@media only screen and (max-width: 450px) {
+    #banner .description {
+        font-size: 2.5rem;
+    }
+}
+
 a, a:hover, a:focus {
     color: inherit;
     text-decoration: none;
