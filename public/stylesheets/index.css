@@ -3,12 +3,17 @@ html {
 }
 body {
     font-family: 'Courier New', monospace;
-    background-color: #f1f1f1;
-    color: #564256;
+    background-color: #41464a;
+    color: #f1f1f1;
 }
 
+
+/* ---------------------------------------------------
+    BANNER STYLE
+----------------------------------------------------- */
+
 body .header {
-    background: radial-gradient(ellipse at bottom, #fff, #076585);
+    background: radial-gradient(#27032b, #100112);
 }
 
 .banner-section-one {
@@ -23,11 +28,39 @@ body .header {
     text-align: center;
 }
 
+.bannerLinks {
+    font-size: 1.5rem;
+    margin-top: 75px;
+}
+
+.button {
+    border: 2px solid black;
+    background-color: #726E97;
+    color: #27032b;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    border: 2px solid #50C5B7;
+    color: #50C5B7;
+}
+
+.resumeLink {
+    padding-right: 30px;
+}
+
 @media only screen and (max-width: 450px) {
     #banner .description {
         font-size: 2.5rem;
     }
 }
+
+/* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
 
 a, a:hover, a:focus {
     color: inherit;
@@ -39,28 +72,30 @@ a, a:hover, a:focus {
     padding: 15px 10px;
     border: none;
     border-radius: 0;
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
 }
 .navbar-brand {
     font-size: 1.8em;
     padding-left: 1%;
     border: none;
+    color: #726E97;
 }
 
 .navbar-brand:hover {
-    color: #B88C9E;
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+    color: #50C5B7;
 }
 
 .btn {
     font-size: 1.6em;
-    color: #564256;
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+    color: #726E97;
 }
 
 .btn:hover {
-    color: #B88C9E;
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+    color: #50C5B7;
+}
+
+.fixed-top.scrolled{
+	background: #100112;
+	transition: background 500ms;
 }
 
 /* ---------------------------------------------------
@@ -180,29 +215,6 @@ ul ul a {
 
 
 /* ---------------------------------------------------
-    SCROLL TO TOP BUTTON
------------------------------------------------------ */
-
-#backToTop {
-    color: #2980b9;
-    display: none;
-    line-height: 40px;
-    position: fixed;
-    bottom: 15rem;
-    right: 45px;
-    width: 4px;
-    text-align: center;
-    font-size: 50px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#backToTop:hover {  
-    color: #564256;
-}
-
-
-/* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 
@@ -218,8 +230,8 @@ ul ul a {
 /* ---------------------------------------------------
     LETTER ANIMATIONS
 ----------------------------------------------------- */
-#banner {
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+#banner .banner-text,.description {
+    text-shadow: 0 0.7rem 0.7rem rgba(0, 0, 0, 0.9);
 }
 
 .banner-text {
@@ -246,106 +258,41 @@ ul ul a {
 .description {
     font-size: 3rem;
     font-weight: 200;
-
-}
-
-/* ---------------------------------------------------
-    FOOTER STYLE
------------------------------------------------------ */
-
-footer {
-    background: radial-gradient(ellipse at top, #fff, #076585);
-    text-align: center;
-    padding: 6em 0 4em 0;
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
-}
-
-/* Icons */
-
-ul.icons li {
-    display: inline-block;
-    padding: 0 1em 0 0;
-    font-size: 1.45em;
-    color: #564256;
-}
-ul.icons li:hover{
-    color:#B88C9E;
-}
-
-ul.icons li:last-child {
-    padding-right: 0 !important;
-}
-
-.copyright {
-    color: #564256;
-    font-size: 1.3em;
-    letter-spacing: 0.225em;
-    list-style: none;
-    padding: 0;
-    text-transform: uppercase;
-}
-.copyright:hover {
-    color: #B88C9E;
-}
-
-
-/* ---------------------------------------------------
-    SCROLL DOWN ARROW
------------------------------------------------------ */
-#banner .learn-more {
-    margin-top: 300px;
-    font-size: 2em;
-    position: relative;
-    color: #564256;
-    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
-}
-
-
-@media only screen and (max-width: 864px) {
-    #banner .learn-more {
-        margin: 20%;
-    }
-}
-
-#banner .learn-more:hover {
-    color: #B88C9E;
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
-}
-
-.fa-arrow-down {
-    position: absolute;
-    display: block;
-    left: 49%;
-    margin-top: 25px;
-    padding: 4px;
 }
 
 
 /* ---------------------------------------------------
     ABOUT SECTION
 ----------------------------------------------------- */
+.dividers {
+	border-top: 5px solid #50C5B7;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin: 0;
+}
 
 .section-two {
-    margin: 6%;
+    padding: 6%;
+    background-color: #2e2b2e;
 }
 .frame {
-    background-color:  #076585;
+    background-color:  #27032b;
+}
+
+#pic {
+    width: 63%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    transform: rotate(-20deg);
+    border: 1px solid #726E97;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 @media only screen and (max-width: 992px) {
     .frame {
       display: none;
     }
-}
-
-.portfolioimage img { 
-    max-width: 48%;
-    margin: 10%;
-    margin-left: 23%
-}
-
-div.portfolioimage {
-    transform: rotate(20deg);
 }
 
 .aboutText {
@@ -497,7 +444,7 @@ div.portfolioimage {
     color: #564256;
     text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
 }
-hr {
+.divideSkills {
 	width: 80%;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
@@ -531,4 +478,50 @@ hr {
 .contact-email:hover {
     color: #B88C9E;
     text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+}
+
+/* ---------------------------------------------------
+    FOOTER STYLE
+----------------------------------------------------- */
+
+footer {
+    background-color: #100112;
+    text-align: center;
+    padding: 6em 0 4em 0;
+    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+}
+
+/* Icons */
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+    font-size: 1.45em;
+    color: #726E97;
+}
+ul.icons li:hover{
+    color:#50C5B7;
+}
+
+ul.icons li:last-child {
+    padding-right: 0 !important;
+}
+
+.copyright {
+    color: #726E97;
+    font-size: 1.3em;
+    letter-spacing: 0.225em;
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+
+}
+.copyright:hover {
+    color: #50C5B7;
+}
+
+.footerdivider {
+	border-top: 5px solid #50C5B7;
+    margin: 0;
 }

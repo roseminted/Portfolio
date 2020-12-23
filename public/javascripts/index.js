@@ -1,4 +1,4 @@
-// sidebar
+// SIDEBAR
 $(document).ready(function () {
     $("#sidebar").mCustomScrollbar({
         theme: "minimal"
@@ -21,26 +21,8 @@ $(document).ready(function () {
     });
 });
 
-//Scroll to top when arrow up clicked BEGIN
-$(window).scroll(function () {
-    const height = $(window).scrollTop();
-    if (height > 100) {
-        $('#backToTop').fadeIn();
-    } else {
-        $('#backToTop').fadeOut();
-    }
-});
-$(document).ready(function () {
-    $("#backToTop").click(function (event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    });
-
-});
 
 // LETTER ANIMATIONS
-// wrap every letter in a span
 const textWrapper = document.querySelector('.banner-text .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -58,5 +40,23 @@ anime.timeline({ loop: true })
         easing: "easeOutExpo",
         delay: 2000
     });
+
+
+// CHECK IF NAVBAR SCROLLED
+function checkScroll() {
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+    if ($(window).scrollTop() > startY) {
+        $('.navbar').addClass("scrolled");
+    } else {
+        $('.navbar').removeClass("scrolled");
+    }
+}
+
+if ($('.navbar').length > 0) {
+    $(window).on("scroll load resize", function () {
+        checkScroll();
+    });
+}
 
 

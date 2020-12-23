@@ -64,44 +64,42 @@
 
         <div id="content">
             <div class="header">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg fixed-top">
                     <div class="container-fluid">
                         <a class="navbar-brand navbarBrand" href="/">_yk_</a>
                         <button type="button" id="sidebarCollapse" class="btn">
                             <i class="fas fa-align-left"></i>
-                            <span>Menu</span>
                         </button>
                     </div>
                 </nav>
                 <!-- Banner -->
                 <section id="banner" class="section-one">
                     <div class="text-center banner-section-one">
-                        <h1 class="banner-text">
-                            <span class="text-wrapper">
-                                <span class="letters">
-                                    Hi My Name is Yasmin
+                        <div>
+                            <h1 class="banner-text">
+                                <span class="text-wrapper">
+                                    <span class="letters">
+                                        Hi My Name is Yasmin
+                                    </span>
                                 </span>
-                            </span>
-                        </h1>
-                        <h3 class="description">
-                            I build things on the internet
-                        </h3>
-                        <div class="learn-more">
-                            <a href="#about">
-                                Learn More
-                                <i class="fas fa-arrow-down"></i>
-                            </a>
+                            </h1>
+                            <h3 class="description">
+                                I build things on the internet
+                            </h3>
+                            <div class="bannerLinks">
+                                <a class="button resumeLink" href="/resume">View Resume</a>
+                                <a class="button projectLink" href="#projects">View Projects</a>
+                            </div>
                         </div>
                     </div>
                 </section>
             </div>
+            <hr class="dividers">
             <section class="section-two">
                 <a id="about" href=""></a>
                 <div class="row">
                     <div class="col-4 frame">
-                        <div class="portfolioimage">
-                            <img src="/images/me.jpeg" alt="">
-                        </div>
+                        <img id="pic" src="/images/me.jpg" alt="">
                     </div>
                     <div class="col-lg-8 text-center aboutText">
                         <p>I am a <span>web developer</span> based in Newark, NJ. </p>
@@ -114,6 +112,7 @@
                     </div>
                 </div>
             </section>
+            <hr class="dividers">
             <section class="skills-tools text-center">
 
                 <div class="skills-tools_container">
@@ -133,7 +132,7 @@
                             <li class="list-group-item">User interface</li>
                         </ul>
                     </div>
-                    <hr>
+                    <hr class="divideSkills">
                     <div class="tools py-5">
                         <h3>Tools</h3>
                         <ul class="list-group">
@@ -152,7 +151,9 @@
                     </div>
                 </div>
             </section>
+            <hr class="dividers">
             <section class="projects">
+                <a id="projects" href=""></a>
                 <h3 class="text-center mb-4 mt-5">Projects</h3>
                 <div class="row">
                     <div class=" col-lg-4 col-md-6 text-center">
@@ -187,6 +188,7 @@
                     </div>
                 </div>
             </section>
+            <hr class="dividers">
             <section class="contact text-center">
                 <a id="contact" href=""></a>
                 <div class="container">
@@ -198,6 +200,7 @@
                     </p>
                 </div>
             </section>
+            <hr class="footerdivider">
             <footer>
                 <ul class="icons list-unstyled">
                     <li>
@@ -225,9 +228,6 @@
                 <span class="copyright">
                     <a href="/">&copy; Yasmin Khaleel</a>
                 </span>
-                <div class="backToTopButton">
-                    <a href="#" id="backToTop" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></a>
-                </div>
             </footer>
         </div>
         <div class="overlay"></div>
