@@ -9,6 +9,7 @@ $(document).ready(function () {
         $('#sidebar').removeClass('active');
         // hide overlay
         $('.overlay').removeClass('active');
+        $('.navbar').show();
     });
 
     $('#sidebarCollapse').on('click', function () {
@@ -18,6 +19,7 @@ $(document).ready(function () {
         $('.overlay').addClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        $('.navbar').hide();
     });
 });
 
@@ -44,7 +46,7 @@ anime.timeline({ loop: true })
 
 // CHECK IF NAVBAR SCROLLED
 function checkScroll() {
-    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+    const startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
     if ($(window).scrollTop() > startY) {
         $('.navbar').addClass("scrolled");
@@ -59,4 +61,8 @@ if ($('.navbar').length > 0) {
     });
 }
 
-
+// CHANGE ACTIVE CLASS
+$('#sidebar li').click(function () {
+    $('li').removeClass('active');
+    $(this).addClass('active');
+})

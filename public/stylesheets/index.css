@@ -109,11 +109,10 @@ a, a:hover, a:focus {
     right: -250px;
     height: 100vh;
     z-index: 999;
-    background: #076585;
+    background: #726E97;
     color: #f1f1f1;
     transition: all 0.5s;
     overflow-y: scroll;
-    /* box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); */
 }
 
 #sidebar.active {
@@ -125,7 +124,7 @@ a, a:hover, a:focus {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #076585;
+    background: #726E97;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -136,8 +135,7 @@ a, a:hover, a:focus {
 }
 
 #dismiss:hover {
-    background: #f1f1f1;
-    color: #076585;
+    color: #50C5B7;
 }
 
 .overlay {
@@ -146,7 +144,7 @@ a, a:hover, a:focus {
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
+    z-index: 1;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
@@ -157,17 +155,12 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #076585;
+    background: #726E97;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #076585;
-}
-
-#sidebar ul p {
-    color: #f1f1f1;
-    padding: 10px;
+    border-bottom: 1px solid #726E97;
 }
 
 #sidebar ul li a {
@@ -177,13 +170,13 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #B88C9E;
+    color: #50C5B7;
     background: #f1f1f1;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #B88C9E;
+    color: #50C5B7;
     background: #f1f1f1;
 }
 
@@ -202,7 +195,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #076585;;
+    background: #726E97;;
 }
 
 .sidebar-header {
@@ -357,7 +350,11 @@ ul ul a {
 ----------------------------------------------------- */
 
 .projects {
-    margin: 5%;
+    padding-top: 3.5%;
+    padding-right: 4.5%;
+    padding-left: 4.5%;
+    padding-bottom: 6%;
+    background-color: #2e2b2e;
 }
 
 .card-img-top {
@@ -369,8 +366,8 @@ ul ul a {
     font-size: 2.5em;
     font-weight: 600;
     line-height: 1.7em;
-    margin: auto;
-    color: #076585;
+    color: #50C5B7;
+    margin-bottom: 2%;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
@@ -378,10 +375,13 @@ ul ul a {
     font-size: 1.8em;
     line-height: 1.7em;
     margin: auto;
+    color: #726E97;
 }
 
-.card:hover {
-    box-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.9em 0.9em -0.4em rgba(80, 197, 183, 0.9);
+  transform: translateY(-0.75em);
 }
 
 @media only screen and (max-width: 992px) {
@@ -395,8 +395,11 @@ ul ul a {
     SKILLS SECTION
 ----------------------------------------------------- */
 .skills-tools {
-    margin: 5%;
-    background: #B88C9E;
+    margin-top: 6%;
+    margin-right: 4.5%;
+    margin-left: 4.5%;
+    margin-bottom: 6%;
+    background: #2e2b2e;
 }
 
 .list-group {
@@ -422,7 +425,7 @@ ul ul a {
 }
 
 .list-group-item {
-    background-color: #B88C9E;
+    background-color: #2e2b2e;
     border: none;
     padding: 3%;
 }
@@ -432,7 +435,7 @@ ul ul a {
     font-weight: 600;
     line-height: 1.7em;
     margin: auto;
-    color: #076585;
+    color: #50C5B7;
     text-shadow: 0 0.1rem 0.05rem rgba(0, 0, 0, 0.5);
 }
 
@@ -441,7 +444,7 @@ ul ul a {
     font-weight: 600;
     line-height: 1.7em;
     margin: auto;
-    color: #564256;
+    color: #726E97;
     text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 .divideSkills {
@@ -452,13 +455,18 @@ ul ul a {
 /* ---------------------------------------------------
     CONTACT SECTION
 ----------------------------------------------------- */
+.contact {
+    margin-top: 3.5%;
+    margin-right: 4.5%;
+    margin-left: 4.5%;
+    margin-bottom: 6%;
+}
 
 .contact h3 {
     font-size: 2.5em;
     font-weight: 600;
     line-height: 1.7em;
-    margin: auto;
-    color: #076585;
+    color: #50C5B7;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
@@ -467,16 +475,14 @@ ul ul a {
     font-size: 1.8em;
     font-weight: 600;
     line-height: 1.7em;
-    margin: auto;
-    padding-bottom: 10%;
 }
 
 .contact-email {
-    color: #076585;
+    color: #726E97;
 }
 
 .contact-email:hover {
-    color: #B88C9E;
+    color: #50C5B7;
     text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
 }
 
