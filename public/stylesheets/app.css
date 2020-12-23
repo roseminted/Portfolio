@@ -3,8 +3,8 @@ html {
 }
 body {
     font-family: 'Courier New', monospace;
-    background-color: #f1f1f1;
-    color: #564256;
+    background-color: #41464a;
+    color: #f1f1f1;
 }
 
 
@@ -22,28 +22,28 @@ a, a:hover, a:focus {
     padding: 15px 10px;
     border: none;
     border-radius: 0;
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
-    background: #287f97;
+    background: #100112;
 }
 .navbar-brand {
     font-size: 1.8em;
     padding-left: 1%;
     border: none;
+    color: #726E97;
 }
 
 .navbar-brand:hover {
-    color: #B88C9E;
+    color: #50C5B7;
     text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
 }
 
 .btn {
     font-size: 1.6em;
-    color: #564256;
+    color: #726E97;
     text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
 }
 
 .btn:hover {
-    color: #B88C9E;
+    color: #50C5B7;
     text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
 }
 /* ---------------------------------------------------
@@ -57,7 +57,7 @@ a, a:hover, a:focus {
     right: -250px;
     height: 100vh;
     z-index: 999;
-    background: #076585;
+    background: #726E97;
     color: #f1f1f1;
     transition: all 0.5s;
     overflow-y: scroll;
@@ -72,7 +72,7 @@ a, a:hover, a:focus {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #076585;
+    background: #726E97;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -83,8 +83,7 @@ a, a:hover, a:focus {
 }
 
 #dismiss:hover {
-    background: #f1f1f1;
-    color: #076585;
+    color: #50C5B7;
 }
 
 .overlay {
@@ -93,29 +92,25 @@ a, a:hover, a:focus {
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
+    z-index: 1;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
-.overlay.active {
+.wrapper .overlay.active {
     display: block;
     opacity: 1;
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #076585;
+    background: #726E97;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #076585;
+    border-bottom: 1px solid #726E97;
 }
 
-#sidebar ul p {
-    color: #f1f1f1;
-    padding: 10px;
-}
 
 #sidebar ul li a {
     padding: 10px;
@@ -124,13 +119,13 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #B88C9E;
+    color: #50C5B7;
     background: #f1f1f1;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #B88C9E;
+    color: #50C5B7;
     background: #f1f1f1;
 }
 
@@ -149,7 +144,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #076585;;
+    background: #726E97;;
 }
 
 .sidebar-header {
@@ -182,15 +177,19 @@ iframe {
     height: 100vh; 
 }
 
+.resume {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .resume a {
     font-size: 1.3em;
     font-weight: 600;
     line-height: 1.7em;
-    margin: auto;
 }
 
 .resume a:hover {
-    color: #B88C9E;
+    color: #50C5B7;
     text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
 }
 /* ---------------------------------------------------
@@ -198,7 +197,7 @@ iframe {
 ----------------------------------------------------- */
 
 footer {
-    background: #287f97;
+    background: #100112;
     text-align: center;
     padding: 6em 0 4em 0;
     text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
@@ -210,10 +209,10 @@ ul.icons li {
     display: inline-block;
     padding: 0 1em 0 0;
     font-size: 1.45em;
-    color: #564256;
+    color: #726E97;
 }
 ul.icons li:hover{
-    color:#B88C9E;
+    color:#50C5B7;
 }
 
 ul.icons li:last-child {
@@ -221,7 +220,7 @@ ul.icons li:last-child {
 }
 
 .copyright {
-    color: #564256;
+    color: #726E97;
     font-size: 1.3em;
     letter-spacing: 0.225em;
     list-style: none;
@@ -229,29 +228,7 @@ ul.icons li:last-child {
     text-transform: uppercase;
 }
 .copyright:hover {
-    color: #B88C9E;
-}
-
-/* ---------------------------------------------------
-    SCROLL TO TOP BUTTON
------------------------------------------------------ */
-
-#backToTop {
-    color: #2980b9;
-    display: none;
-    line-height: 40px;
-    position: fixed;
-    bottom: 15rem;
-    right: 45px;
-    width: 4px;
-    text-align: center;
-    font-size: 50px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#backToTop:hover {  
-    color: #564256;
+    color: #50C5B7;
 }
 
 /* ---------------------------------------------------
@@ -277,7 +254,7 @@ ul.icons li:last-child {
     font-size: 3em;
     font-weight: 600;
     line-height: 1.7em;
-    color: #564256;
+    color: #50C5B7;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
@@ -305,6 +282,7 @@ ul.icons li:last-child {
     font-weight: 600;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
     margin-bottom: 3%;
+    color: #50C5B7;
 }
 
 @media only screen and (max-width: 1070px) {
@@ -324,6 +302,7 @@ ul.icons li:last-child {
     line-height: 1.7em;
     display: inline-block;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+    color: #50C5B7;
 }
 
 @media only screen and (max-width: 900px) {
@@ -339,8 +318,7 @@ ul.icons li:last-child {
 }
 
 .project-links:hover {
-    color: #B88C9E;
-    text-shadow: 0 0.1rem 0.5rem rgba(7, 101, 133, 0.5);
+    color: #726E97;
 }
 
 .main {
@@ -352,7 +330,7 @@ ul.icons li:last-child {
 }
 
 .image-main {
-    box-shadow: 0 0 10px 5px;
+    box-shadow: 0 0 10px 5px rgb(114, 110, 151);
     max-width: 100%;
 }
 
@@ -369,13 +347,12 @@ ul.icons li:last-child {
 .gifs {
     width: 15rem;
     margin: 2%;
-    box-shadow: 0 0 5px 5px;
-    /* border-radius: 5px;
-    cursor: pointer; */
+    box-shadow: 0 0 5px 3px rgb(114, 110, 151);
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.gifs:hover {opacity: 0.6;}
+.gifs:hover {opacity: 0.5;}
 
 .techsused {
     display: grid;
@@ -412,7 +389,7 @@ ul.icons li:last-child {
 }
 
 .project li::marker {
-    color: #287f97;
+    color: #50C5B7;
 }
 
 .features {
@@ -420,24 +397,21 @@ ul.icons li:last-child {
 }
 
 
-/* gif modal */
-
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
 }
 
-/* Modal Content (Image) */
 .modal-content {
     margin: auto;
     display: block;
@@ -445,7 +419,6 @@ ul.icons li:last-child {
     max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
     margin: auto;
     display: block;
@@ -457,7 +430,6 @@ ul.icons li:last-child {
     height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
 .modal-content, #caption { 
     animation-name: zoom;
     animation-duration: 0.6s;
@@ -468,23 +440,21 @@ ul.icons li:last-child {
     to {transform:scale(1)}
 }
 
-/* The Close Button */
 .close {
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
+    color: #50C5B7;
     font-size: 40px;
     transition: 0.3s;
 }
 
 .close:hover, .close:focus {
-    color: #B88C9E;
+    color: #726E97;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;

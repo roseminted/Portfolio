@@ -1,6 +1,5 @@
 ## Portfolio
-Fully responsize styling
-Uses Flexbox
+    A portfolio with all of the key features and responsive design.
 
 # Tools:
     Font Awesome (fontawesome.io)

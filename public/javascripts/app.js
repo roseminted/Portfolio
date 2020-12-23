@@ -21,23 +21,6 @@ $(document).ready(function () {
     });
 });
 
-//Scroll to top when arrow up clicked BEGIN
-$(window).scroll(function () {
-    const height = $(window).scrollTop();
-    if (height > 100) {
-        $('#backToTop').fadeIn();
-    } else {
-        $('#backToTop').fadeOut();
-    }
-});
-$(document).ready(function () {
-    $("#backToTop").click(function (event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    });
-
-});
 
 // Get the modal
 const modal = document.getElementById('myModal');
@@ -64,3 +47,10 @@ const span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
     modal.style.display = "none";
 }
+
+
+// CHANGE ACTIVE CLASS
+// $('#sidebar li').click(function () {
+//     $('#sidebar li').removeClass('active');
+//     $(this).addClass('active');
+// })
