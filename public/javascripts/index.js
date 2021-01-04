@@ -66,3 +66,8 @@ $('#sidebar li').click(function () {
     $('li').removeClass('active');
     $(this).addClass('active');
 })
+
+// LOADER
+$(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+});
