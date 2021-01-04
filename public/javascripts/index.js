@@ -1,3 +1,8 @@
+// LOADER
+$(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+});
+
 // SIDEBAR
 $(document).ready(function () {
     $("#sidebar").mCustomScrollbar({
@@ -67,7 +72,4 @@ $('#sidebar li').click(function () {
     $(this).addClass('active');
 })
 
-// LOADER
-$(window).on("load", function () {
-    $(".loader-wrapper").fadeOut("slow");
-});
+

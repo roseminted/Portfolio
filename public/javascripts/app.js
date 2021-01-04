@@ -1,3 +1,8 @@
+// LOADER
+$(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+});
+
 // sidebar
 $(document).ready(function () {
     $("#sidebar").mCustomScrollbar({
@@ -45,7 +50,3 @@ span.onclick = function () {
 }
 
 
-// LOADER
-$(window).on("load", function () {
-    $(".loader-wrapper").fadeOut("slow");
-});
